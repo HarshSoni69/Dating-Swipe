@@ -4,13 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-  "dev": "nodemon api/server.js",
-  "start": "node api/server.js",
-  "client:install": "npm install --force --prefix client",
-  "client:build": "npm run build --prefix client",
-  "build": "npm run client:install && npm run client:build",
-  "postinstall": "npm run client:install"
-},
+		"dev": "nodemon api/server.js",
+		"build": "npm install && npm install --prefix client && npm run build --prefix client",
+		"start": "node api/server.js"
+	},
 	"keywords": [],
 	"author": "",
 	"type": "module",
